@@ -1,0 +1,21 @@
+{
+    "name": "vscode-vaporware",
+    "displayName": "vscode-vaporware",
+    "description": "80s themed",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "vaporware",
+                "uiTheme": "vs-dark",
+                "path": "./themes/vaporware-color-theme.json"
+            }
+        ]
+    }
+}

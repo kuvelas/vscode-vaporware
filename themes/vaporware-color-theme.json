@@ -2,10 +2,10 @@
 	"name": "vaporware",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#263238",
-		"editor.foreground": "#eeffff",
+		"editor.background": "#000000",
+		"editor.foreground": "#00d7ff",
 		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"sideBarTitle.foreground": "#bbbb"
 	},
 	"tokenColors": [
 		{
@@ -16,7 +16,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#969896"
 			}
 		},
 		{
@@ -45,7 +45,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#ff002e"
 			}
 		},
 		{
@@ -76,7 +76,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -87,7 +87,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#c23127"
 			}
 		},
 		{
@@ -100,7 +100,7 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "#ff51d4"
 			}
 		},
 		{
@@ -119,7 +119,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#6f00ff"
 			}
 		},
 		{
@@ -130,12 +130,13 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
+				"constant.other.caps",
 				"variable.parameter",
 				"keyword.other.unit",
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"foreground": "#ff5200"
 			}
 		},
 		{
@@ -147,10 +148,11 @@
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"string.quoted.double.python"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#00C4FF"
 			}
 		},
 		{
@@ -216,6 +218,7 @@
 		{
 			"name": "entity.name.method.js",
 			"scope": [
+				"entity.name.method",
 				"entity.name.method.js"
 			],
 			"settings": {
@@ -458,6 +461,15 @@
 			}
 		},
 		{
+			"name": "Markdown - Line Break",
+			"scope": [
+				"text.html.markdown meta.dummy.line-break"
+			],
+			"settings": {
+				"foreground": ""
+			}
+		},
+		{
 			"name": "Markdown - Heading",
 			"scope": [
 				"markdown.heading",
@@ -515,6 +527,13 @@
 			}
 		},
 		{
+			"name": "Markup - Strike",
+			"scope": [
+				"markup.strike"
+			],
+			"settings": {}
+		},
+		{
 			"name": "Markdown - Blockquote",
 			"scope": [
 				"markup.quote punctuation.definition.blockquote.markdown"
@@ -530,6 +549,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
+				"foreground": ""
 			}
 		},
 		{
@@ -623,6 +643,89 @@
 			],
 			"settings": {
 				"foreground": "#EEFFFF"
+			}
+		},
+		{
+			"scope": "token.info-token",
+			"settings": {
+				"foreground": "#6796e6"
+			}
+		},
+		{
+			"scope": "token.warn-token",
+			"settings": {
+				"foreground": "#cd9731"
+			}
+		},
+		{
+			"scope": "token.error-token",
+			"settings": {
+				"foreground": "#f44747"
+			}
+		},
+		{
+			"scope": "token.debug-token",
+			"settings": {
+				"foreground": "#b267e6"
+			}
+		},
+		{
+			"scope": "string.quoted.docstring.multi.python",
+			"settings": {
+				"foreground": "#00FFD5"
+			}
+		},
+		{
+			"scope": "string.quoted.single.python",
+			"settings": {
+				"foreground": "#dfdfdf"
+			}
+		},
+		{
+			"scope": [
+				"variable.parameter.function-call.python"
+			],
+			"settings": {
+				"foreground": "#00FFFF"
+			}
+		},
+		{
+			"scope": [
+				"constant.character.format.placeholder.other.python",
+				"constant.language.python"
+			],
+			"settings": {
+				"foreground": "#ff005d"
+			}
+		},
+		{
+			"scope": "entity.other.jinja.delimiter.tag",
+			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"scope": "keyword.control.jinja",
+			"settings": {
+				"foreground": "#ff51d4"
+			}
+		},
+		{
+			"scope": "entity.other.attribute-name.table.toml",
+			"settings": {
+				"foreground": "#ff51d4"
+			}
+		},
+		{
+			"scope": "keyword.key.toml",
+			"settings": {
+				"foreground": "#00d0ff"
+			}
+		},
+		{
+			"scope": "string.quoted.single.basic.line.toml",
+			"settings": {
+				"foreground": "#dfdfdf"
 			}
 		}
 	]
